@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap");
+
+html {
+  font-family: "Kelly Slab", cursive, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Kelly Slab", cursive, sans-serif, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Kelly Slab", cursive, "Courier New", monospace;
+}
