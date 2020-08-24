@@ -12,8 +12,33 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-width: 400px;
+  background-color: #f6f9fc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Kelly Slab", cursive, "Courier New", monospace;
+}
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  background-color: #fff;
+  margin-top: 8rem;
+  min-height: 50px;
+  padding: 3rem;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 2px;
 }

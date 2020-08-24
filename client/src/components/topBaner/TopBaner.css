@@ -1,0 +1,129 @@
+.topBaner {
+  min-height: 540px;
+  background: linear-gradient(-90deg, #02203c, #001528);
+  box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.banerBody {
+  min-height: 320px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  padding: 2rem;
+  align-items: center;
+}
+
+.welcomeText {
+  margin: 2.5rem;
+}
+
+.punchInfo {
+  color: #fff;
+}
+
+.punchInfo .spots img {
+  width: 60px;
+  height: 35px;
+}
+
+.punchInfo .spots p {
+  margin-left: 1rem;
+}
+
+.punchInfo .spots {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pictorialAbsolute img {
+  position: absolute;
+  height: 90vh;
+  right: 4.5rem;
+  top: 6rem;
+  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.5s;
+}
+
+.pictorial {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .punchInfo {
+    text-align: center;
+  }
+  .punchInfo .spots {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .pictorialAbsolute {
+    display: none;
+  }
+  .pictorial {
+    display: grid;
+    justify-content: center;
+    margin-top: -5rem;
+  }
+  .pictorial img {
+    height: 90vh;
+  }
+  .topBaner {
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pictorialAbsolute img {
+    right: 1rem;
+    top: 10rem;
+  }
+}
+
+.MuiFormLabel-root {
+  color: #fff !important;
+  font-family: "Kelly Slab", cursive, sans-serif !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #d7d7d7 !important;
+}
+
+.MuiOutlinedInput-input {
+  color: #fff !important;
+  font-family: "Kelly Slab", cursive, sans-serif !important;
+}
+
+.joinNowButton,
+.registrationButton {
+  padding: 0.4rem;
+  width: 7rem;
+  border: none;
+  border-radius: 3.5px;
+  background-color: #ffffff;
+  color: #002864;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.registrationButton {
+  height: 3rem;
+  text-align: center;
+  width: 10rem;
+  color: #ffffff;
+  background-color: #002864;
+}
+
+.joinNowButton:hover {
+  background-color: #424242;
+  color: #fff;
+}
+
+.joinNowButton:focus {
+  outline: none;
+}
+
+/* iPad Pro */
+@media screen and (height: 1366px) {
+  .pictorialAbsolute img {
+    height: 50vh;
+  }
+}
