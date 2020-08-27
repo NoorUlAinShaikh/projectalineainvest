@@ -5,10 +5,279 @@
 .purchaseContainer {
   min-height: 540px;
   background: linear-gradient(-90deg, #02203c, #001528);
-  box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.4);
-  display: flex;
+  box-shadow: 2px -5px 20px 15px rgba(0, 0, 0, 0.4);
   flex-direction: column;
   text-align: center;
   color: #fff;
   padding: 1.5rem;
+}
+
+.purchaseCardsContainer {
+  flex-direction: column;
+  margin-top: -20rem;
+  align-items: center;
+}
+
+.cardTypesContainer {
+  justify-content: space-between;
+  max-width: 450px;
+  width: 100%;
+  color: #fff;
+  margin-right: -2.3rem;
+}
+
+.cardType {
+  letter-spacing: 3px;
+  padding: 1rem 1rem 0.3rem 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: large;
+}
+
+.cardType.active {
+  border-bottom: #fff solid 2px;
+}
+
+.cardType:hover,
+.cardType:active {
+  border-bottom: #fff solid 2px;
+}
+
+.cardsContainer {
+  justify-content: center;
+  margin-top: 5rem;
+  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.5s;
+}
+
+.card {
+  display: grid;
+  align-items: baseline;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 8px rgba(66, 66, 66, 0.4);
+  border-radius: 0.4rem;
+  color: #000;
+  text-align: center;
+  max-width: 550px;
+  min-width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: 950px;
+}
+
+.topDetails {
+  position: relative;
+  top: -4rem;
+}
+.top {
+  height: 400px;
+}
+
+.topSpotsLeft {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -0.2rem;
+}
+
+.card.available {
+  box-shadow: 0 7px 20px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cardImage {
+  width: 100%;
+  position: relative;
+  top: -5rem;
+}
+
+.cardtype {
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+.cardInterest {
+  font-weight: 700;
+  font-size: xx-large;
+  line-height: 50%;
+  padding: 1rem 0;
+  letter-spacing: 1px;
+}
+
+.cardCashback {
+  background-color: #0d47a1;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  margin: 0 3rem;
+  font-size: larger;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cardSignUpContainer {
+  margin-top: -2rem;
+}
+
+.cardSignUp {
+  padding: 0.6rem 2.5rem;
+  width: 100%;
+  width: -webkit-fill-available;
+  margin-top: 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: #fff;
+  font-size: larger;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Kelly Slab;
+  outline: none;
+  background-color: #012c53;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.7);
+}
+
+.cardSignUp:focus:enabled {
+  outline: none;
+}
+.cardSignUp:disabled {
+  cursor: auto;
+}
+.cardSignUp:hover:enabled {
+  background-color: #424242;
+  box-shadow: 0 2px 13px 1px rgba(0, 0, 0, 0.7);
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  border-radius: 0.4rem;
+}
+
+.opacity04 {
+  opacity: 0.4;
+}
+
+.body {
+  padding: 2.5rem 0.1rem;
+  height: 400px;
+}
+
+.bodyHeader {
+  letter-spacing: 3px;
+  font-size: large;
+  text-align: start;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.feature {
+  display: -webkit-box;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.featureIcon {
+  width: 20px;
+}
+
+.featureContent {
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.bonus {
+  text-align: justify;
+  padding: 0.5rem;
+  opacity: 0.7;
+}
+
+.bottom {
+  display: flex;
+  height: 130px;
+}
+
+.bottomContent {
+  padding: 0.5rem;
+  text-align: start;
+}
+
+.fee {
+  text-decoration: line-through;
+  margin-top: 0.3rem;
+}
+
+.subscription {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: x-large;
+  color: #00a86b;
+}
+
+.savings {
+  font-size: large;
+  margin-top: 2px;
+  color: #00a86b;
+}
+
+.dollar {
+  width: 30px;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.divider {
+  border: none;
+  height: 1.86px;
+  margin: 0;
+  background-color: #bdbdbd;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 960px) {
+  .cardTypesContainer {
+    display: flex;
+  }
+  .purchaseCardsContainer {
+    margin-top: -15rem;
+  }
+  .top {
+    height: 440px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .card {
+    width: 20%;
+  }
+  .top {
+    height: 360px;
+  }
+  .body {
+    height: 440px;
+  }
+  .bottom {
+    height: 130;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .cardsContainer {
+    margin-top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .top {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1040px) {
+  .top {
+    height: 380px;
+  }
+  .body {
+    height: 460px;
+  }
 }

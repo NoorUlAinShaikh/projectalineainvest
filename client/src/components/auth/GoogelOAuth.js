@@ -48,16 +48,14 @@ class GoogleOAuth extends React.Component {
 
   render() {
     return (
-      <div>
-        <button ref={this.loginButtonRef} onClick={this.handleLogin} className="loginButton">
-          <img
-            style={{ width: "20px", height: "20px", margin: "0 0.5rem", color: "#000" }}
-            src={GoogleIcon}
-            alt="GoogleLogo"
-          />
-          {this.props.isSignedIn ? "Sign Out" : "Sign In with Google"}
-        </button>
-      </div>
+      <button ref={this.loginButtonRef} onClick={this.handleLogin} className="loginButton">
+        <img
+          style={{ width: "20px", height: "20px", margin: "0 0.5rem", color: "#000" }}
+          src={GoogleIcon}
+          alt="GoogleLogo"
+        />
+        {this.props.isSignedIn ? "Sign Out" : "Sign In with Google"}
+      </button>
     );
   }
 }

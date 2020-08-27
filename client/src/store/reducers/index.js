@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
 import authReducer from "./authReducer";
+import windowSizeReducer from "./windowSizeReducer";
 
-export default combineReducers({ auth: authReducer });
+export default combineReducers({ auth: authReducer, windowSize: windowSizeReducer });
