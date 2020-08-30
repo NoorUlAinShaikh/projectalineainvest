@@ -35,7 +35,7 @@ const PurchaseSection = () => {
         <div className={`topDetails`}>
           <div className={`cardtype`}>{card.type}</div>
           <div className={`cardInterest${!card.available ? " opacity04" : ""}`}>
-            <CountUp start={0} end={card.interest} delay={2} decimals={2} />%{formatSuperscript(index + 1)}
+            <CountUp start={0} end={card.interest} delay={0.5} decimals={2} />%{formatSuperscript(index + 1)}
           </div>
           <div className={`cardCashback${!card.available ? " opacity04" : ""}`}>{`${card.cashBack} cash back`}</div>
         </div>
