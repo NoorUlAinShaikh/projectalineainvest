@@ -126,7 +126,7 @@ const PurchaseSection = () => {
     <section className="purchaseSection">
       <div className="flex purchaseContainer">
         <h1 style={{ fontSize: "xxx-large" }}>{PURCHASE_HEADER}</h1>
-        <h2 style={{ color: "#D7D7D7", fontSize: "x-large", letterSpacing: "1px" }}>
+        <h2 className="purchase_description">
           {PURCHASE_DESCRIPTION} 1.15%{formatSuperscript("3")} to 2.15%{formatSuperscript("1")} bonus rate.
         </h2>
       </div>

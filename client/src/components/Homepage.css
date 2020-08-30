@@ -90,3 +90,16 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 411px), (width: 414px) {
+  .depositsTitle,
+  .depositsSubheader {
+    text-align: justify;
+  }
+  .depositsHeader {
+    text-align: start;
+  }
+  .investorsSection {
+    margin-top: 5rem;
+  }
+}

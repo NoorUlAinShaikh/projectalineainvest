@@ -127,3 +127,19 @@
     height: 50vh;
   }
 }
+/* Pixel 2, Pixel 2XL */
+@media screen and (max-width: 411px), (width: 414px) {
+  .pictorial img {
+    height: 75vh;
+  }
+  .pictorial {
+    justify-content: flex-end;
+    margin-top: -3.5rem;
+  }
+  .depositReturnsSection {
+    margin-top: 10rem !important;
+  }
+  .welcomeText {
+    margin: 0;
+  }
+}
